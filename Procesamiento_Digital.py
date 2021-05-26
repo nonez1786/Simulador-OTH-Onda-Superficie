@@ -1,5 +1,15 @@
-# -*- coding: utf-8 -*-
+#==============================================================================
+#Titulo: Generador_Senal
+#Autor: Zenon Saavedra  Hola Diegooo
+#==============================================================================
 """
+En este se encuentran funciones relacionadas a diferentes tecnicas de PDS:
+    - Correlacion 
+    - Filtro Coseno Alzado
+    - Filtro Raiz Coseno Alzado
+    - FFT
+        
+
 Created on Thu May 13 23:31:45 2021
 
 @author: Zenon
@@ -137,8 +147,8 @@ def main():
     print('=============================================================\n')
     
     
-    [senal1,t] = Generador_Senal.Generacion_Tx("LFM","None",N,AB,PRF,T_pulso,Fc)
-    #[senal1,t] = Generador_Senal.Generacion_Tx("Pulse_Cod","Complem_1",N,AB,PRF,T_pulso,Fc)
+    #[senal1,t] = Generador_Senal.Generacion_Tx("LFM","None",N,AB,PRF,T_pulso,Fc)
+    [senal1,t] = Generador_Senal.Generacion_Tx("Pulse_Cod","Complem_1",N,AB,PRF,T_pulso,Fc)
     
         
     ts = t[1]-t[0]

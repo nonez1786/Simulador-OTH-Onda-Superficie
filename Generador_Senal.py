@@ -24,7 +24,7 @@ import math
 from math import pi
 from numpy import sin
 from numpy import cos
-import Funciones
+
 
 
 # Codigos
